@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <form action="" method="POST" id="form">
+            <!-- Type Cart -->
+            <div class="form-group row">
+                <label for="inputName" class="col-sm-1-12 col-form-label">Type Cart</label>
+                <div class="col-sm-1-12">
+                    <select class="form-control" name="type_auto" id="type-auto" required>
+                        <option value="" selected>Select type Auto</option>
+                        <option value="automovil">Automóvil</option>
+                        <option value="camion">Camión </option>
+                        <option value="mula">Mula</option>
+                        <option value="otro">Otro</option>
+                    </select>
+                </div>
+            </div>
+            <!-- Cost -->
+            <div class="form-group row">
+                <label for="inputName" class="col-sm-1-12 col-form-label">Cost</label>
+                <div class="col-sm-1-12">
+                    <input type="number" min="1000" class="form-control" name="cost" id="cost" value="0"
+                        placeholder="Cost" required>
+                </div>
+            </div>
+            <!-- Seve -->
+            <div class="form-group row">
+                <div class="offset-sm-2 col-sm-10">
+                    <button type="submit" class="btn btn-primary">Save</button>
+                </div>
+            </div>
+        </form>
+        <br>
+
+
+        <div class="card">
+            <div class="card-header">
+                <h4>Peajes</h4>
+            </div>
+            <div class="card-body">
+                <h4 class="card-title">Recaudo</h4>
+                <p class="card-text">Señor@ Carlos</p>
+                <p class="card-text">Los peajes recaudados de los <span id="total_auto">0</span>
+                    veiculos son: <span id="total_cost">[]</span>
+                </p>
+                <!-- Automovil -->
+                <p class="card-text">El valor total por peaje de Automoviles es:
+                    <span id="total_automovil">0</span>
+                </p>
+                <!-- Camion -->
+                <p class="card-text">El valor total por peaje de Camiones es:
+                    <span id="total_camiones">0</span>
+                </p>
+                <!-- Mulas -->
+                <p class="card-text">El valor total por peaje de Mulas es:
+                    <span id="total_mulas">0</span>
+                </p>
+                <!-- Otros -->
+                <p class="card-text">El valor total por peaje de Otros es:
+                    <span id="total_otros">0</span>
+                </p>
+                <!-- Total -->
+                <p class="card-text">Para un Total:
+                    <span id="total">0</span>
+                </p>
+            </div>
+            <div class="card-footer text-muted">
+                <!-- Footer -->
+            </div>
+        </div>
+    </div>
+    <script src="js/main.js" type="module"></script>
+</body>
+
+</html>

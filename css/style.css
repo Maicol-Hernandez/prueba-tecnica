@@ -1,0 +1,35 @@
+ * {
+     padding: 0;
+     margin: 0;
+     box-sizing: border-box;
+     font-family: 'Kufam', sans-serif;
+ }
+
+
+ body {
+     width: 100%;
+     min-height: 100vh;
+     background: #f2f0f5;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+
+ h4 {
+     color: black;
+ }
+
+ button {
+     width: 40%;
+     color: #f2f0f5;
+     /* min-height: 100vh; */
+     background: #222E89;
+     display: flex;
+     justify-content: center;
+     /* align-items: center; */
+ }
+
+
+ .form-group {
+     margin-bottom: 20px;
+ }

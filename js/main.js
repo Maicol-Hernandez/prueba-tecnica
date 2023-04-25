@@ -1,4 +1,7 @@
-// import { Toll } from "./service/Toll.js";
+/**
+ * Repository GitHub
+ * https://github.com/Maicol-Hernandez/prueba-tecnica
+ */
 
 const tolls = []
 const selectTypeAuto = document.querySelector('#type-auto');
